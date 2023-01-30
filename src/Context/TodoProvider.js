@@ -2,9 +2,15 @@ import React, { useReducer, useEffect, useState } from 'react'
 import TodoContext from './TodoContext'
 import {
   setLocalStorage,
+  setLocalStorageSingle,
   getLocalStorage,
   clearLocalStorage
 } from './localStorage'
+import { NOTES_DEFAULT, PROJECTS_DEFAULT, TODOS_DEFAULT } from './defaultValues'
+
+setLocalStorageSingle('todos', TODOS_DEFAULT)
+setLocalStorageSingle('projects', PROJECTS_DEFAULT)
+setLocalStorageSingle('notes', NOTES_DEFAULT)
 
 let currentProject = getLocalStorage('currentProject')
 let todos = getLocalStorage('todos')
@@ -14,9 +20,9 @@ let notes = getLocalStorage('notes')
 const initState = {
   showSidebar: false,
   currentProject: currentProject ? currentProject : 'Home',
-  todos: todos ? todos : [],
-  projects: projects ? projects : [],
-  notes: notes ? notes : []
+  todos: todos,
+  projects: projects,
+  notes: notes
 }
 
 const todoReducer = (state, action) => {

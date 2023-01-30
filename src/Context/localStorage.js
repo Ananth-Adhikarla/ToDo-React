@@ -8,6 +8,10 @@ export const setLocalStorage = state => {
   window.localStorage.setItem('notes', JSON.stringify(state.notes))
 }
 
+export const setLocalStorageSingle = (name, item) => {
+  window.localStorage.setItem(name, JSON.stringify(item))
+}
+
 export const getLocalStorage = item => {
   return JSON.parse(window.localStorage.getItem(item))
 }
