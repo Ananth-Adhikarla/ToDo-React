@@ -8,14 +8,22 @@ import {
 } from './localStorage'
 import { NOTES_DEFAULT, PROJECTS_DEFAULT, TODOS_DEFAULT } from './defaultValues'
 
-setLocalStorageSingle('todos', TODOS_DEFAULT)
-setLocalStorageSingle('projects', PROJECTS_DEFAULT)
-setLocalStorageSingle('notes', NOTES_DEFAULT)
-
 let currentProject = getLocalStorage('currentProject')
 let todos = getLocalStorage('todos')
 let projects = getLocalStorage('projects')
 let notes = getLocalStorage('notes')
+
+if (todos.length === 0) {
+  todos = [...todos, ...TODOS_DEFAULT]
+}
+
+if (projects.length === 0) {
+  projects = [...projects, ...PROJECTS_DEFAULT]
+}
+
+if (notes.length === 0) {
+  notes = [...notes, ...NOTES_DEFAULT]
+}
 
 const initState = {
   showSidebar: false,

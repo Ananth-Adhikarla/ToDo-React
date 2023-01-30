@@ -1,6 +1,8 @@
+import { v4 as uuidv4 } from 'uuid'
+
 export const NOTES_DEFAULT = [
   {
-    id: '55f455fd-1b03-4f12-bc5d-2445f20a4704',
+    id: uuidv4(),
     project: 'Notes',
     title: 'Shopping List',
     desc: 'Cheese\nOnions\nPotatoes\nTomatoes\nBell Peppers\nLays - salt & vinegar\nCoca Cola\nFrozen Pizza'
@@ -15,15 +17,15 @@ export const NOTES_DEFAULT = [
 
 export const PROJECTS_DEFAULT = [
   {
-    id: '4f08f2b7-6409-49f2-b108-bba39b634b03',
+    id: uuidv4(),
     title: 'Work'
   },
   {
-    id: '653a3236-169c-479a-9999-b8958aacd7bc',
+    id: uuidv4(),
     title: 'School'
   },
   {
-    id: '766d14d0-8c2f-4e35-82ef-4257e0aca655',
+    id: uuidv4(),
     title: 'Misc.'
   }
 ]
