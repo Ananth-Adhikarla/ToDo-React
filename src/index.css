@@ -1,13 +1,73 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --header-color: #156760;
+  --bg-color: #C2CBC8;
+  --sidebar-color: #003D38;
+
+  --link-color: #CEE8E5;
+  --link-hover: #08F1DE;
+  
+  --white-color: #EEF4F8;
+  --black-color: #1C1C1C;
+  --todo-color: #030925;
+
+  --border-green: #01680B;
+  --border-yellow: #A3B004;
+  --border-red: #EB271A;
+
+  --btn-color: #9CC3DF;
+  --btn-hover: #2685c7;
+
+  --add-btn-color: #3D9991;
+  --add-btn-hover: #139388;
+
+  --notification-icon: #D7E3E2;
+
+  --todocard-color: #DAE5E2;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+ background: #e5ecea;
+}
+
+::-webkit-scrollbar-thumb {
+ background: #4fa858;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a5d2f;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-color);
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.MainContainer {
+  display: flex;
+  flex: 1;  
 }

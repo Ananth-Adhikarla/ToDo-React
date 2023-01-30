@@ -1,0 +1,6 @@
+.customCheckbox {
+  accent-color: #b0ebe6;
+  height: 20px; /* not needed */
+  width: 20px; /* not needed */
+  outline: 2px solid #193c03;
+}

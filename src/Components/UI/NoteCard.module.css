@@ -1,0 +1,88 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background: #d0dbd7;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 6px 2px #4d5a57;
+}
+
+.cardDelete {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background: #c3d5ce;
+  margin-bottom: 1rem;
+  color: #032842;
+}
+
+.delete {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.cardDelete:hover {
+  cursor: pointer;
+  color: var(--btn-hover)
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.cardHeaderExtra {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.cardBody {
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  white-space: pre-wrap;
+}
+
+.cardBodyExtra {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .cardHeader, .cardHeaderExtra {
+    font-size: 2rem;
+  }
+
+  .delete {
+    font-size: 1.6rem;
+  }
+
+  .cardBody, .cardBodyExtra {
+    font-size: 1.6rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1025px) {
+  .cardHeader, .cardHeaderExtra {
+    font-size: 2.4rem;
+  }
+
+  .delete {
+    font-size: 2rem;
+  }
+
+  .cardBody, .cardBodyExtra {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,82 @@
+.close {
+  display: flex;
+  margin-left: auto;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: greenyellow;
+}
+
+.modalHeader {
+  background: #3246a3;
+  padding: 0 2rem;
+}
+
+.content {
+  background: #4e5fad;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+}
+
+.content h1 {
+  font-size: 1.6rem;
+}
+
+.content .todo {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .desc {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.priorityColor {
+  color: #ffe6e6;
+  letter-spacing: 0.2rem;
+}
+
+.details {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .content h1 {
+    font-size: 2.4rem;
+  }
+
+  .content .desc {
+    font-size: 2rem;
+  }
+
+  .details {
+    font-size: 2rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content h1 {
+    font-size: 3.6rem;
+  }
+
+  .content .desc {
+    font-size: 2.4rem;
+  }
+
+  .details {
+    font-size: 2.4rem;
+  }
+}
+

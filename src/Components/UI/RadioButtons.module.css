@@ -1,0 +1,38 @@
+.radiobtn {
+  position: relative;
+  display: block;
+  text-align:center;
+}
+
+.radiobtn label {
+  display: block;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+  position: absolute;
+  width: 100%;
+  appearance: none;
+}
+
+.inputSpan {
+  font-size: 1.4rem;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .inputSpan {
+    font-size: 1.6rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .inputSpan {
+    font-size: 1.8rem;
+  }
+}

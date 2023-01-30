@@ -1,0 +1,80 @@
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 1.4rem;
+  background: var(--todo-color);
+  color: var(--white-color);
+}
+
+.close {
+  cursor: pointer;
+}
+
+.close:hover {
+  color: greenyellow;
+}
+
+.menu {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #bec7f1;
+  font-weight: 600;
+  border-right: 1px solid #383c4a;
+}
+
+.menuLink {
+  font-size: 1.6rem;
+}
+
+.menuLink:hover {
+  cursor: pointer;
+  color: #0d625b;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.active {
+  color: #0d625b;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .modalHeader {
+    font-size: 2.4rem;
+    padding: 1.6rem;
+  }
+
+  .menu {
+    width: 20%;
+  }
+
+  .menuLink {
+    font-size: 2rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .modalHeader {
+    font-size: 3.6rem;
+    padding: 2rem;
+  }
+
+  .menu {
+    width: 20%;
+  }
+
+  .menuLink {
+    font-size: 2.4rem;
+  }
+}

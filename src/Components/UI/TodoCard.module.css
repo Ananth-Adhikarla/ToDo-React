@@ -1,0 +1,139 @@
+.todoDateSuccess {
+  color: #387600
+}
+
+.todoDateWarning {
+  color: #bd9400
+}
+
+.todoDateDanger {
+  color: #cd4848;
+}
+
+.success {
+  border: 2px solid #387600
+}
+
+.warning {
+  border: 2px solid #bd9400
+}
+
+.danger {
+  border: 2px solid #cd4848;
+}
+
+/* New */
+
+.todoCard {
+  background: var(--todocard-color);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.todoCard:hover {
+  box-shadow: 2px 2px 6px 2px #4d5a57;
+}
+
+.todoLeft {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todoRight {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.todoTitle {
+  color: var(--todo-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  margin-right: auto;
+}
+
+.todoDate {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.strikeOut {
+  text-decoration: line-through;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .todoCard {
+    height: auto;
+    flex-direction: row;
+    width: 90%;
+    gap: 2rem;
+  }
+
+  .todoLeft {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .todoRight {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .todoDate {
+    font-size: 1.1rem;
+  }
+
+  .icons {
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    gap: 1.2rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1025px) {
+  .todoCard {
+    padding: 2rem 2rem;
+    width: 90%;
+    gap: 2rem;
+  }
+
+  .todoLeft {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .todoRight {
+    flex-direction: row;
+    width: 35%;
+    justify-content: space-between;
+  }
+
+  .todoDate {
+    font-size: 1.3rem;
+  }
+}

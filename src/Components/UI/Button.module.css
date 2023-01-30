@@ -1,0 +1,82 @@
+.editButton {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 1rem;
+  transition: all .3s ease-in-out;
+  box-shadow: 2px 2px 2px 0px #587183;
+  background-color: #65d796;
+}
+
+.editButton:hover {
+  background-color: #3aaf6c;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.deleteButton {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 1rem;
+  transition: all .3s ease-in-out;
+  box-shadow: 2px 2px 2px 0px #587183;
+  background-color: #d2d765;
+}
+
+.deleteButton:hover {
+  background-color: #aeb444;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+
+.AddButton {
+  color: var(--white-color);
+  background-color: var(--add-btn-color);
+  border: none;
+  border-radius: 50%;
+  padding: 1.6rem;
+  transition: all .3s ease-in-out;
+  margin-top: auto;
+}
+
+.AddButton:hover {
+  background-color: var(--add-btn-hover);
+  cursor: pointer;
+}
+
+.DetailsButton {
+  background-color: var(--btn-color);
+  color: var(--black-color);
+  width: 10rem;
+  height: 4rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: all .3s ease-in-out;
+  box-shadow: 2px 2px 2px 0px #587183;
+}
+
+.DetailsButton:hover {
+  background-color: var(--btn-hover);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .DetailsButton {
+    width: 6rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .DetailsButton {
+    width: 10rem;
+    font-size: 1.6rem;
+  }
+}

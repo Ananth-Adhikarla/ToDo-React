@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect, useContext } from 'react'
 
-function App() {
+import Header from './Components/Header/Header'
+import Sidebar from './Components/Sidebar/Sidebar'
+import Footer from './Components/Footer/Footer'
+import TodoProvider from './Context/TodoProvider'
+import TodoList from './Components/Todo/TodoList'
+
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      {
+        <TodoProvider>
+          <Header />
+          <section className='MainContainer'>
+            <Sidebar />
+            <TodoList />
+          </section>
+          <Footer />
+        </TodoProvider>
+      }
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,156 @@
+.AddTodoForm {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.input {
+  background-color: whitesmoke;
+  max-width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+
+.input:focus {
+  background-color: rgb(230, 227, 227);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+
+.textarea {
+  height: 20rem;
+}
+
+.DateSelect, .PrioritySelect {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputSpan {
+  font-size: 1.4rem;
+}
+
+.dateInput {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e52b0e;
+  border-radius: 1rem;
+  color: #db4f39;
+  background-color: transparent;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.success {
+  border: 2px solid var(--border-green);
+  background:none;
+  color: var(--black-color);
+}
+
+.warning {
+  border: 2px solid var(--border-yellow);
+  background:none;
+  color: var(--black-color);
+}
+
+.danger {
+  border: 2px solid var(--border-red);
+  background:none;
+  color: var(--black-color);
+}
+
+input[type="radio"]:checked + .success {
+  background: var(--border-green);
+  border: 1px solid rgb(126, 216, 69);
+  color:#fff;
+}
+
+input[type="radio"]:checked + .warning {
+  background: var(--border-yellow);
+  border: 1px solid #c7d52e;
+  color:#fff;
+}
+
+input[type="radio"]:checked + .danger {
+  background: var(--border-red);
+  border: 1px solid #e6564c;
+  color:#fff;
+}
+
+.formActions {
+  display: flex;
+  margin-top: auto;
+  margin-left: 0;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.formBtn {
+  padding: 1rem;
+  border: 1px solid var(--sidebar-color);
+  border-radius: 1rem;
+  color: var(--header-color);
+  background-color: transparent;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.formBtn:hover {
+  background: var(--sidebar-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .AddTodoForm {
+    width: 80%;
+  }
+
+  .input {
+    font-size: 1.6rem;
+  }
+
+  .inputSpan {
+    font-size: 1.6rem;
+  }
+
+  .DateSelect, .PrioritySelect {
+    flex-direction: row;
+  }
+
+  .formActions {
+    margin-left: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .AddTodoForm {
+    width: 80%;
+  }
+
+  .input {
+    font-size: 1.8rem;
+  }
+
+  .inputSpan {
+    font-size: 1.8rem;
+  }
+
+  .DateSelect, .PrioritySelect {
+    flex-direction: row;
+  }
+
+  .formActions {
+    margin-left: auto;
+  }
+}
