@@ -14,15 +14,15 @@ let projects = getLocalStorage('projects')
 let notes = getLocalStorage('notes')
 
 if (todos === null) {
-  todos = [...todos, ...TODOS_DEFAULT]
+  todos = [...TODOS_DEFAULT]
 }
 
 if (projects === null) {
-  projects = [...projects, ...PROJECTS_DEFAULT]
+  projects = [...PROJECTS_DEFAULT]
 }
 
 if (notes === null) {
-  notes = [...notes, ...NOTES_DEFAULT]
+  notes = [...NOTES_DEFAULT]
 }
 
 const initState = {
