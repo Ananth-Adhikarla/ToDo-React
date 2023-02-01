@@ -13,15 +13,15 @@ let todos = getLocalStorage('todos')
 let projects = getLocalStorage('projects')
 let notes = getLocalStorage('notes')
 
-if (todos.length === 0) {
+if (todos === null) {
   todos = [...todos, ...TODOS_DEFAULT]
 }
 
-if (projects.length === 0) {
+if (projects === null) {
   projects = [...projects, ...PROJECTS_DEFAULT]
 }
 
-if (notes.length === 0) {
+if (notes === null) {
   notes = [...notes, ...NOTES_DEFAULT]
 }
 
